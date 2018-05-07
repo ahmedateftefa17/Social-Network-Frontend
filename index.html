@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+
+  <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/lib/tether.min.js"></script>
+  <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lib/axios.min.js"></script>
+  <script type="text/javascript">
+    axios.get('https://jsonplaceholder.typicode/posts').then(res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    })
+  </script>
+</body>
+</html>
